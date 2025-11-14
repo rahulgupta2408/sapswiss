@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+header, nav, footer {
+    background-color: #192a56;
+    color: #fff;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    background: #fff;
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(25, 42, 86, 0.10);
+}
+
+h1, h2, h3 {
+    color: #273c75;
+}
