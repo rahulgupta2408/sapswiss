@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=${DEPLOYPATH:-'public_html'}
-    - cp -a ./* $DEPLOYPATH
+    - export DEPLOYPATH=/home1/earthlyf/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
