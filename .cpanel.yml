@@ -1,8 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/earthlyf/sapswiss.ca/
+    - export DEPLOYPATH=/home1/earthlyf/sapswiss.ca/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp contact-style.css $DEPLOYPATH
