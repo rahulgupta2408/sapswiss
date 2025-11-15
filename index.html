@@ -2,31 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Auto Parts Demo Shop</title>
+    <title>SAP Swiss</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #fafafa;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #41b6e6;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0 1.2rem 0;
+            font-size: 2.7rem;
+            letter-spacing: 3px;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1.15rem;
+        }
+        nav a {
+            color: #41b6e6;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            transition: color 0.15s;
+        }
+        nav a:hover {
+            color: #005fa3;
+        }
+        .category-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 60vh;
+            justify-content: center;
+        }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        .category-card {
+            background: #fafafa;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.07);
+            border: 2px solid #41b6e6;
+            width: 240px;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.18rem;
+            font-weight: bold;
+            transition: box-shadow .18s, transform .18s, border-color .18s;
+        }
+        .category-card:hover {
+            box-shadow: 0 8px 24px rgba(65,182,230,.15);
+            transform: scale(1.07);
+            border-color: #005fa3;
+        }
+        .category-card a {
+            text-decoration: none;
+            color: #41b6e6;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .category-card .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 0.7rem;
+        }
+        @media (max-width: 900px) {
+            .card-grid { gap: 1.2rem; }
+            .category-card { width: 42vw; font-size: 1rem;}
+        }
+        @media (max-width: 640px) {
+            .card-grid { flex-direction: column; gap: 1.2rem; }
+            .category-card { width: 90vw; }
+        }
+        footer {
+            background: #e3edf6;
+            padding: 1rem;
+            text-align: center;
+            color: #41b6e6;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-    <header><h1>Auto Parts Demo Shop</h1></header>
+    <header>
+        SAP Swiss
+    </header>
     <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a> | 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <h2>Welcome!</h2>
-        <p>Your one-stop shop for quality auto parts and accessories.</p>
-        <section>
-            <h3>Featured Parts</h3>
-            <ul>
-                <li>Brake Pads</li>
-                <li>Engine Oil</li>
-                <li>Car Batteries</li>
-                <li>Windshield Wipers</li>
-            </ul>
+        <section class="category-section">
+            <div class="card-grid">
+                <div class="category-card">
+                    <a href="dc-dc-converter.html">
+                        <div class="card-icon">🔌</div>
+                        DC DC Converter
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="wiring-harness.html">
+                        <div class="card-icon">🪢</div>
+                        Wiring Harness
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="flashers.html">
+                        <div class="card-icon">⚡</div>
+                        Flashers
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="relays.html">
+                        <div class="card-icon">🔁</div>
+                        Relays
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="buzzers.html">
+                        <div class="card-icon">🔔</div>
+                        Buzzers
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="horn.html">
+                        <div class="card-icon">📯</div>
+                        Horn
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        &copy; 2025 Auto Parts Demo Shop. All rights reserved.
+        &copy; 2025 SAP Swiss. All rights reserved.
     </footer>
 </body>
 </html>
